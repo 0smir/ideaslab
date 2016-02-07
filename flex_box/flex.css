@@ -1,0 +1,28 @@
+.one{
+	height: 400px;
+	height: 500px;
+		margin: 0 auto;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: red;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+
+
+.two-item{
+	width: 100px;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: cyan;
+ 
+}
+
+.one div:first-child{
+	display: flex;
+}
+

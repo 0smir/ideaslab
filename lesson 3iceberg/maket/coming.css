@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------end reset css--------------------------*/
+
+
+
+
+@font-face{
+	font-family: HouschkaPro-Medium;
+	src:  url(fonts/HouschkaPro-Medium.otf);
+	font-style: normal;
+	font-weight: lighter;
+}
+
+
+@font-face{
+	font-family: HouschkaPro-Bold;
+	src: url(fonts/HouschkaPro-Bold.otf);
+	font-style: normal;
+	font-weight: bold;
+}
+
+body{
+	font-family: HouschkaPro-Medium;
+	font-weight: lighter;
+}
+
+
+/*----------------стили для неба------------------*/
+.main{
+	width: 980px;
+	height: 800px;
+	margin: 0 auto;
+	background-color: #b9d6ef;
+}
+
+
+.cloud{
+	width: 100%;
+	height: 62px;	
+}
+
+.cloud img{
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+/*-----------------стили для моря + айсберг-----------------*/
+
+.sea{
+	background-color: #266b97;
+	width: 100%;
+	height: 335px;
+}
+
+
+.light_blue,
+.dark_blue{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.light_blue{
+	height: 4px;
+	background-color: #ddecfa;
+}
+.dark_blue{
+	height: 9px;
+	background-color: #327dad;
+}
+
+
+.iceberg{
+	width: 363px;
+	height: 495px;
+	background-image: url(images/ice_end_ship.png);
+	margin: -200px 0 0 320px;
+}
+
+.for_circle{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	background-color: #b9d6ef;
+	line-height: 77px;
+	font-family: HouschkaPro-Medium;
+	font-weight: lighter;
+
+}
+
+.time{
+	width: 295px;
+	height: 100px;
+
+	position: relative;
+	top: 250px;
+	left: 50px;
+}
+
+.wrap{
+	
+	float: left;
+	text-align:  center;
+	margin: 0;
+}
+
+.wrap:nth-of-type(2){
+	padding: 0 42px;
+}
+
+
+.wrap span,
+.text span{
+	font-size: 24px;
+}
+
+.wrap span{
+	color: #266b97;
+}
+
+.text span{
+	font-family: HouschkaPro-Medium;
+	color: #f3f3f3;
+	font-weight: normal;
+	line-height: 45px;
+}
+
+.text span:nth-child(2){
+	margin: 0 38px;
+}
+
+/*------------стили блка с сообщением--------------------*/
+
+
+
+span{
+	
+	font-weight: 100;
+}
+
+
+.massege{
+	width: 100%;
+	height: 402px;
+	text-align: center;
+	margin: 22px 0;
+}
+
+h1{
+	font-family: HouschkaPro-Bold;
+	font-size: 72px;
+	font-weight: 700;
+	color: #fefefe;
+	text-shadow: 5px 2px 0 #9ab2c7;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+
+.massege span{
+	color: #578fb4;
+	font-size: 14px;
+}
+
+
+input[type=email]{
+	width: 240px;
+	height: 36px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-right: 10px;
+	color: #808080;
+	border: 1px solid #d1d1d0;
+	font-size: 12px;
+	font-weight: 100;
+	box-shadow: inset -1px 5px 10px 3px #e5e5e5;
+}
+
+button{
+	height: 35px;
+	width: 92px;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: HouschkaPro-Medium;
+	border: 1px solid #faaa22;
+	text-shadow: 1px 1px 0 #f8a426;
+	color: #ffffff;
+	text-align: center;
+	background-color: #fbc842;
+	box-shadow: inset 0px -27px 10px 1px #f8a426;
+}
+
+
+input[type=email],
+button {
+	margin-top: 20px;
+}
+

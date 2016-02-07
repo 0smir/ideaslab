@@ -1,0 +1,103 @@
+div{
+	width: 860px;
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 0 auto;
+	
+}
+
+p{
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #555555;
+	line-height: 21px
+}
+
+h1{
+	font-family: sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#rules > h1{
+	font-family: serif;
+	font-weight: normal;
+	text-decoration: none;
+	color: #ff6961;
+}
+
+#rules > p{
+	background-color: 	#bfecf9;
+}
+
+#rules > span{
+	color: 	#00b7eb;
+}
+
+span{
+	font-style: italic;
+	background-color: 	#32127a;
+ 
+}
+
+.pinck {
+	color: 	#8d7683;
+}
+
+#sauna .pinck{
+	background-color: 	#b7e44d;
+}
+
+.pinck span {
+	background-color: #f984ef;
+	color: 	#00b7eb;
+}
+
+.blue{
+	background-color: 	#bfecf9;
+}
+
+#spa{
+	background-color: 	#dccccb;
+}
+
+ul > li:first-child{
+	color: yellow;
+
+}
+
+/*Псевдокласс :nth-child( Х ) дословно переводится как 
+"который является дочерним по отношению к contained block'у 
+и соответствует правилу Х". В данном случае и h1 и <p>
+являются дочерними по отношению к <div id="spa"> и 
+воспринимаются как члены одного набора.
+
+Для того чтобы правило Х сработало только к тем элементам 
+(одного типа), к классу которого используется псевдокласс, 
+необходимо сам псевдокласс заменить на :nth-of-type( X ).*/
+
+#spa p:nth-child(3){   
+	border: 3px solid yellow;
+
+}
+
+#spa p:nth-of-type(1){   
+	border: 3px solid cyan;
+
+}
+
+p:nth-of-type(1){ 
+	background-color: grey;  
+	border: 3px solid cyan;
+
+}
+
+.two [href]:nth-of-type(2){
+	background-color: white;
+}
+
+a[href]{
+	border: 3px dashed pink;
+}
+

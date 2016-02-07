@@ -1,0 +1,67 @@
+.content{
+	width: 70%;
+	margin: 0 auto;
+}
+
+div{
+	margin: 10px;
+	box-sizing: border-box;
+	padding: 20px;
+	border: 1px dotted red;
+}
+
+/* применение стилей к третьему вложенному в блок элэлементу*/
+div:nth-child(3){
+	color: grey;
+	border: 1px dotted red;
+}
+
+p > a:first-child{
+	background-color: grey;
+	border: 1px dotted red;
+}
+/*не срабатывает т.к. <p> не певый элемент внутри блока,
+ первый элнмент - <h1> */
+p:first-child{
+	background-color: yellow;
+	border: 1px dotted red;
+}
+
+/*срабатывает т.к. <p> второй элемент внутри каждого блока*/
+p:nth-child(2){
+	background-color: 	#f0e68c;
+	border: 3px dotted red;
+}
+
+.inner:nth-child(2){
+	background-color: 	#fef5fe;
+	border: 5px dotted 	#2fee62;
+}
+
+.inner p:nth-child(3){
+	color: 	blue;
+	border: 5px solid 	#2fee62;
+}
+
+
+
+
+.inner > p:first-of-type:hover,
+{
+	background-color: 	#ff3800;
+}
+
+h1:first-child:hover{
+	background-color: 	#ff3800;
+}
+
+li:nth-child(n+2):nth-child(odd){
+	background-color: violet;
+}
+
+
+
+
+
+
+

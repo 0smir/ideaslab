@@ -1,0 +1,233 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*--------------------- end reset css --------------------------*/
+
+body{
+	background-color: #f8f8f8;
+	font-family: sans-serif, "Verdana", "Tahoma";
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.content{
+	width: 90%;
+	background-color: #ffffff;
+	margin: 0 auto;
+	padding: 100px 30px 30px;
+}
+
+h1, h2{
+	text-align: center;
+	color: #808080;
+}
+
+h1{
+	font-size: 42px;
+	line-height: 84px;
+	letter-spacing: 10px;
+}
+
+.clearfix:before{
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: left;
+}
+.winter_town{
+	width: 100%
+}
+
+p > img{
+	height:370px;
+	width: 33%;
+	margin-top: 10px;
+}
+
+
+p{
+	text-indent: 25px;
+	padding: 15px 0 0;
+}
+
+a{
+	text-decoration: none;
+	color: #7f8080;
+}
+
+a:visited{
+	color: #7f8080;
+}
+
+a:hover{
+	color:	#b7b8b8
+}
+
+ul{
+	list-style-type: circle;
+}
+
+table{
+	width: 60%;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+th{
+	background-color: #d7d2d0;
+	height: 35px;
+}
+
+td{
+	text-align: left;
+	height: 25px;
+}
+
+tr:nth-child(odd){
+	background-color: #eceae8;
+}
+
+td:nth-child(3),
+td:nth-child(2){
+	text-align: center;
+}
+
+.sale{
+	height: 200px;
+	width: 250px;
+	border-radius: 20px;
+	margin: 0 auto;
+	background: url(http://mangotours.com.ua/img/akc_tour.jpg);
+}
+
+.sale a {
+	display: block;
+	height: 100%;
+}
+
+.wrapper{
+	width: 100%;
+	position: fixed;
+	border-bottom: 1px solid #eceae8;
+	background-color: #ffffff;
+}
+
+#main_menu{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#main_menu > li{
+	height: 100%;
+	margin-left: -4px;
+	font-size: 18px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+#main_menu > li:nth-child(odd){
+	background-color: 	#f0ffff;
+}
+#main_menu > li:nth-child(even){
+	background-color: 	#ffffff;;
+}
+
+#main_menu a{
+	height: 100%;
+	box-sizing: border-box;
+	display: block;
+	padding: 20px;
+	color: #808080;
+}
+
+#main_menu a:visited{
+	color: #808080;
+}
+#main_menu a:hover{
+	color: #343434;
+	
+}
+
+#main_menu > li:hover{
+	border: 1px solid #eceae8; 
+
+}
+
+.seasons img{
+	border: 10px solid #eceae8;
+	border-radius: 5px;
+}
+
+#spring img,
+#autumn img{
+	float: left;
+}
+
+#summer img,
+#winter img{
+	float: right;
+}
+
+#spring img{
+	margin: 0 20px 20px;
+}
+
+#autumn img{
+ margin: 20px 20px 20px 0;
+}
+
+#winter img,
+#summer img
+{
+	margin: 20px 0 20px 20px;
+}
+
+
+
+
+
+

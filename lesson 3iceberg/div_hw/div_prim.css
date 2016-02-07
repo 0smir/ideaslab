@@ -1,0 +1,107 @@
+.main{
+	height: 700px;
+	width: 700px;
+	background-color: rgba(224, 255, 255, 1);
+	border: 1px dashed rgb(241, 198, 255);
+	
+}
+div{
+	border: 1px dashed rgb(241, 198, 255);
+}
+
+.cloud{
+	height: 70px;
+	width: 150px;
+	background-color: rgba(255, 255, 255, 0.7);
+	margin: 0 75px 10px;
+	display: inline-block;
+}
+
+.massege{
+	margin: 0 auto;
+	height: 300px;
+	text-align: center;
+	background-color: rgba(224, 224, 224, 0.3);
+}
+
+.sea{
+	height: 300px;
+	width: 700px;
+	background-color: rgb(0, 36, 147);
+}
+
+.ship{
+	height: 30px;
+	width: 70px;
+	background-color: rgb(101, 115, 120);
+	position: relative;
+	left: 125px;
+	bottom: 15px;
+}
+
+.iceberg{
+	height: 280px;
+	width: 180px;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: relative;
+	left: 240px;
+	bottom: 140px;
+}
+
+.time{
+	width: 173px;
+	height: 80px;
+	padding: 7px 0 0 7px;
+	position: relative;
+	top: 165px;
+	background-color: rgba(212, 237, 212, 1);
+}
+
+.clear:before{
+	content: ' ';
+	overflow: hidden;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+
+.wrap{
+	float: left;
+}
+
+.for_circle{
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgb(198, 227, 255)
+}
+
+
+input{
+	height: 30px;
+	width: 200px;
+	border-radius: 4px;
+}
+
+button{
+	height: 35px;
+	width: 100px;
+	border-radius: 4px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 164, 72);
+}
+
+h1{
+	font-size: 65px;
+	color: rgb(255, 255, 255);
+	margin: 5px;
+	text-shadow: 2px 1px 2px rgb(83, 131, 178); 
+}
+
+span{
+	font-size: 14px;
+	color: rgb(21, 0, 87);
+}
+

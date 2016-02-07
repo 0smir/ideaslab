@@ -1,0 +1,41 @@
+body{
+	 background-image: url(image/fon.jpg);
+	 background-repeat: no-repeat;
+
+}
+
+.wrapper{
+	width: 100%;
+	margin: auto;
+	}
+
+.header{
+	width: 1000px;
+	margin: 0 auto;
+}	
+	
+.quick-menu{
+	width: 600px;
+}	
+
+.contact{
+	width: 200px;
+
+}	
+	
+li {
+	list-style: none;
+}
+
+ul {
+	float: left;
+}
+
+
+.fotter{
+	background-color: rgba ();
+	color:white;
+	text-align:center;
+	padding:5px; 
+}
+
