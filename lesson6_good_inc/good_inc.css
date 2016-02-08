@@ -1,0 +1,52 @@
+body{
+	background-image: url(images/background.jpg);
+}
+
+.wrapper{
+	width: 940px;
+	margin: 0 auto;
+	background-color: #373737;
+}
+
+.flex{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.bridge{
+	width: 640px;
+	height: 390px;
+	margin: 0;
+	
+}
+
+.bridge > a:after{
+	content: ' ';
+	position: absolute;
+	left: 638px;
+	top: 50px;
+	border: 12px solid transparent;
+	border-left: 12px solid #f26c4f;
+}
+
+.info{
+	width: 300px;
+	color: rgba(255, 255, 255, 1);
+	box-sizing: border-box;
+	padding: 0 35px;
+}
+
+.bridge > a{
+	display: block;
+	height: 100%;
+	position: relative;
+	border-right: 10px solid #f26c4f;
+}
+
+figcaption{
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 120px;
+	left: 500px;
+}
