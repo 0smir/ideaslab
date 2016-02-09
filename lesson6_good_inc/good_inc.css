@@ -1,5 +1,23 @@
+@font-face{
+	font-family: 'Nexa light';
+	src: url(fonts/Nexa_Light.otf);
+}
+
+@font-face{
+	font-family: 'Nexa Bold';
+	src: url(fonts/Nexa_Bold.otf);
+}
+
+@font-face{
+	font-family: Arial;
+	src: url(fonts/Arial-Regular.ttf);
+}
+
 body{
 	background-image: url(images/background.jpg);
+	font-family: sans-serif, ArialS;
+	font-size: 12px;
+	line-height: 21px;
 }
 
 .wrapper{
@@ -12,6 +30,8 @@ body{
 	display: flex;
 	justify-content: flex-start;
 }
+
+/*--------bunner------*/
 
 .bridge{
 	width: 640px;
@@ -28,19 +48,12 @@ body{
 	border: 12px solid transparent;
 	border-left: 12px solid #f26c4f;
 }
-
-.info{
-	width: 300px;
-	color: rgba(255, 255, 255, 1);
-	box-sizing: border-box;
-	padding: 0 35px;
-}
-
 .bridge > a{
 	display: block;
 	height: 100%;
 	position: relative;
 	border-right: 10px solid #f26c4f;
+	
 }
 
 figcaption{
@@ -49,4 +62,70 @@ figcaption{
 	position: absolute;
 	top: 120px;
 	left: 500px;
+
 }
+
+.info{
+	width: 300px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.4);
+	box-sizing: border-box;
+	padding: 0 35px 1px;
+	flex-direction: column;
+}
+
+.info h2{
+	font-family:'Nexa light';
+	font-weight: 300;
+	font-size: 19px;
+	color: rgba(255, 255, 255, 1);
+}
+
+time{
+	text-align: right;
+}
+.date{
+	margin-top: 20px;
+	justify-content: space-between;
+	padding-bottom: 120px;
+}
+
+.controls{
+	align-self: flex-end;
+	margin-right: -34px;
+}
+
+.controls a{
+	display: inline-block;
+	height: 100%;
+	background-color: rgba(83, 83, 83, 1);
+}
+
+.controls a:first-child{
+	margin-right: -4px;
+}
+
+.controls a:hover{
+	background-color: rgba(83, 83, 83, 0.7);
+}
+/*-------- icons-------*/
+.fa-clock-o,
+.fa-plus{
+	font-size: 18px;
+	font-weight: 100px;
+}
+
+.fa-plus,
+.fa-chevron-left,
+.fa-chevron-right{
+	color: rgba(255, 255, 255, 1);
+}
+
+.fa-chevron-left,
+.fa-chevron-right{
+	font-size: 15px;
+	padding: 9px;
+	
+}
+
+
