@@ -2,6 +2,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: lighter;
 	font-size: 18px;
+	background-color: #22232d;
 }
 
 @font-face{
@@ -24,7 +25,7 @@ footer{
 	width: 100%;
 }
 
-/*header,
+header,
 footer{
 	position: fixed;
 }
@@ -36,11 +37,9 @@ header{
 footer{
 	bottom: 0;
 }
-*/
+
 .wrapper{
 	width: 1199px;
-	margin: 0 auto;
-	background-color: yellow;
 }
 
 header{
@@ -61,3 +60,41 @@ footer{
 	color: #ffffff;
 	font-size: 12px;
 }
+
+.photo{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	background-image: url(images/albert.png);
+	background-repeat: no-repeat;
+	background-position: -12px 0;
+	margin: 20px;
+}
+
+.info{
+	width: 470px;
+	font-weight: 100;	
+	color: #ffffff;
+	margin: 0 20px;
+}
+
+h2{
+	color: #7d8383;
+	font-size: 36px;
+	font-weight: 100;
+}
+
+p{font-weight: 100;}
+
+
+.wrapper{
+	display: flex;
+	margin: auto;
+}
+
+article > .wrapper{
+	justify-content: center;
+	margin: 255px auto;
+}
+
+
