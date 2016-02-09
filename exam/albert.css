@@ -1,0 +1,63 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+}
+
+@font-face{
+	font-family: Arkhip;
+	src: url(fonts/Arkhip_font.otf);
+}
+
+@font-face{
+	font-family: Arkhip;
+	src: url(fonts/Arkhip_font.ttf);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+header,
+.main,
+footer{
+	width: 100%;
+}
+
+/*header,
+footer{
+	position: fixed;
+}
+
+header{
+	top: 0;
+}
+
+footer{
+	bottom: 0;
+}
+*/
+.wrapper{
+	width: 1199px;
+	margin: 0 auto;
+	background-color: yellow;
+}
+
+header{
+	 background-color: #ffffff;
+	 box-shadow: 0 2px 39px -6px #000000;
+	 padding: 24px 0 23px;
+}
+
+header a{
+	color: #ab002c;
+	text-decoration: none;
+	font-family: Arkhip;
+	font-size: 24px;
+}
+
+footer{
+	background-color: #4b4b4b;
+	color: #ffffff;
+	font-size: 12px;
+}
