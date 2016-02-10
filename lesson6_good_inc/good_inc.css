@@ -36,27 +36,23 @@ body{
 .bridge{
 	width: 640px;
 	height: 390px;
-	margin: 0;
-	
+	position: relative;
+	background-image: url(images/bridge.jpg);
+	background-repeat: no-repeat;
+	border-right: 10px solid #f26c4f;
 }
 
-.bridge > a:after{
+.bridge:after{
 	content: ' ';
 	position: absolute;
-	left: 638px;
-	top: 50px;
+	left: 642px;
+	top: 20px;
 	border: 12px solid transparent;
 	border-left: 12px solid #f26c4f;
 }
-.bridge > a{
-	display: block;
-	height: 100%;
-	position: relative;
-	border-right: 10px solid #f26c4f;
-	
-}
 
-figcaption{
+
+.caption{
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
