@@ -20,6 +20,10 @@ body{
 	line-height: 21px;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 .wrapper{
 	width: 940px;
 	margin: 0 auto;
@@ -37,6 +41,9 @@ body{
 	width: 640px;
 	height: 390px;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 	background-image: url(images/bridge.jpg);
 	background-repeat: no-repeat;
 	border-right: 10px solid #f26c4f;
@@ -45,7 +52,7 @@ body{
 .bridge:after{
 	content: ' ';
 	position: absolute;
-	left: 642px;
+	left: 640px;
 	top: 20px;
 	border: 12px solid transparent;
 	border-left: 12px solid #f26c4f;
@@ -53,11 +60,17 @@ body{
 
 
 .caption{
+	width: 371px;
+	height: 62px;
+	padding-left: 30px;
+	font-family:'Nexa light';
+	font-weight: 300;
+	font-size: 16px;
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	top: 120px;
-	left: 500px;
+	align-self: flex-end;
+	display: flex;
+	align-items: center;
 
 }
 
