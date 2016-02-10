@@ -1,0 +1,30 @@
+@font-face{
+	font-family: 'Nexa light';
+	src: url(fonts/Nexa_Light.otf);
+}
+
+@font-face{
+	font-family: 'Nexa Bold';
+	src: url(fonts/Nexa_Bold.otf);
+}
+
+@font-face{
+	font-family: Arial;
+	src: url(fonts/Arial-Regular.ttf);
+}
+
+.wrapper{
+	width: 940px;
+}
+
+.logo{
+	background-color: #373737;
+}
+
+nav{
+	background-color: #474747;
+}
+
+.location{
+	background-color: #ebebeb;
+}
