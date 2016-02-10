@@ -1,0 +1,73 @@
+body{
+	background-color: #22232d;
+	color: #ffffff;
+	padding-top: 150px;
+}
+
+
+
+header,
+article,
+footer{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+header{
+	height: 75px;
+	background-color: #ffffff;
+}
+
+footer{
+	height: 75px;
+	background-color: #4b4b4b;
+}
+
+header,
+footer{
+position: absolute;
+}
+
+header{
+	top:0;
+}
+
+footer{
+	bottom: 0;
+}
+
+
+article{
+	height: 900px;
+	margin: auto;
+	  
+}
+
+.wrapper{
+	width: 1200px;
+	border: 1px dashed red;
+	display: flex;
+	margin: auto;
+}
+
+article .wrapper{
+	margin-top: 75px;
+
+	justify-content: center;
+}
+
+.photo{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	background-image: url(images/albert.png);
+	background-repeat: no-repeat;
+	background-position: -20px 0;
+}
+
+.info{
+	width: 350px;
+	margin: 0 0 0 20px;
+
+}
