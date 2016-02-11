@@ -1,12 +1,27 @@
 @font-face{
-	font-family: 'Nexa light';
-	src: url(fonts/Nexa_Light.otf);
+	font-family: Nexa;
+	src: url('fonts/nexa_light-webfont.eot');
+	src: url('fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/nexa_light-webfont.woff') format('woff'),
+	     url('fonts/nexa_light-webfont.ttf') format('truetype'),
+	     url('fonts/nexa_light-webfont.svg') format('svg');
+	     font-weight: lighter;
+	     font-style: normal;
 }
 
-@font-face{
-	font-family: 'Nexa Bold';
-	src: url(fonts/Nexa_Bold.otf);
+@font-face{ 
+	font-family: Nexa;
+	src: url('fonts/nexa_bold-webfont.eot');
+	src: url('fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/nexa_bold-webfont.woff') format('woff'),
+	     url('fonts/nexa_bold-webfont.ttf') format('truetype'),
+	     url('fonts/nexa_bold-webfont.svg') format('svg');
+	     font-weight: bold;
+	     font-style: normal;
 }
+
+
+
 
 @font-face{
 	font-family: Arial;
@@ -15,7 +30,7 @@
 
 body{
 	background-image: url(images/background.jpg);
-	font-family: sans-serif, ArialS;
+	font-family: sans-serif, Arial;
 	font-size: 12px;
 	line-height: 21px;
 }
@@ -63,15 +78,14 @@ body{
 	width: 371px;
 	height: 62px;
 	padding-left: 30px;
-	font-family:'Nexa light';
-	font-weight: 300;
+	font-family:'Nexa';
+	font-weight: lighter;
 	font-size: 16px;
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(0, 0, 0, 0.5);
 	align-self: flex-end;
 	display: flex;
 	align-items: center;
-
 }
 
 .info{
@@ -84,8 +98,8 @@ body{
 }
 
 .info h2{
-	font-family:'Nexa light';
-	font-weight: 300;
+	font-family:'Nexa';
+	font-weight: 100;
 	font-size: 19px;
 	color: rgba(255, 255, 255, 1);
 }
