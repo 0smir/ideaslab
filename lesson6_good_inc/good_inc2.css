@@ -33,9 +33,7 @@ body{
 	background-image: url(images/background.jpg);
 }
 
-header{
-	
-}
+
 
 *{
 	box-sizing: border-box;
@@ -47,9 +45,11 @@ header{
 
 .wrapper{
 	width: 940px;
+	height: 100%;
 	border: 1px solid red;
+	margin: auto;
 }
-
+/*---------------header-----------------------*/
 .top,
 .nav,
 .location{
@@ -61,7 +61,44 @@ header{
 	background-color: #373737;
 }
 
+
+
 .nav{
 	width: 100%;
 	background: linear-gradient(to right, #ebebeb 50%, #474747 50%);
+}
+.nav > .wrapper{
+	background-color: #474747;
+}
+
+
+.logo{
+	width: 80px;
+	font-size: 36px;
+	font-family: Nexa;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #f26c4f;
+	position: relative;
+}
+
+.logo > span{
+	margin: 0 auto;
+
+}
+
+.logo::after{
+	content:  ' ';
+	display: block;
+	border: 12px solid transparent;
+	border-left: 12px solid #f26c4f;
+	position: absolute;
+	top: 20px;
+
+}
+
+.top .wrapper > span{
+	align-self: center;
+	padding-left: 22px;
+	font-size: 18px;
 }
