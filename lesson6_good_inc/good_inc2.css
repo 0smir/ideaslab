@@ -1,11 +1,23 @@
 @font-face{
-	font-family: 'Nexa light';
-	src: url(fonts/Nexa_Light.otf);
+	font-family: Nexa;
+	src: url('fonts/nexa_light-webfont.eot');
+	src: url('fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/nexa_light-webfont.woff') format('woff'),
+	     url('fonts/nexa_light-webfont.ttf') format('truetype'),
+	     url('fonts/nexa_light-webfont.svg') format('svg');
+	     font-weight: lighter;
+	     font-style: normal;
 }
 
-@font-face{
-	font-family: 'Nexa Bold';
-	src: url(fonts/Nexa_Bold.otf);
+@font-face{ 
+	font-family: Nexa;
+	src: url('fonts/nexa_bold-webfont.eot');
+	src: url('fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/nexa_bold-webfont.woff') format('woff'),
+	     url('fonts/nexa_bold-webfont.ttf') format('truetype'),
+	     url('fonts/nexa_bold-webfont.svg') format('svg');
+	     font-weight: bold;
+	     font-style: normal;
 }
 
 @font-face{
@@ -13,18 +25,43 @@
 	src: url(fonts/Arial-Regular.ttf);
 }
 
-.wrapper{
-	width: 940px;
+body{
+	font-family: sans-serif, Nexa;
+	font-weight: lighter;
+	font-size: 12px;
+	color: #ffffff;
+	background-image: url(images/background.jpg);
 }
 
-.logo{
+header{
+	
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.flex{
+	display: flex;
+}
+
+.wrapper{
+	width: 940px;
+	border: 1px solid red;
+}
+
+.top,
+.nav,
+.location{
+	height: 70px;
+	border: 1px solid green;
+}
+
+.top{
 	background-color: #373737;
 }
 
-nav{
-	background-color: #474747;
-}
-
-.location{
-	background-color: #ebebeb;
+.nav{
+	width: 100%;
+	background: linear-gradient(to right, #ebebeb 50%, #474747 50%);
 }
