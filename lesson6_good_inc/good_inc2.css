@@ -51,7 +51,7 @@ body{
 }
 /*---------------header-----------------------*/
 .top,
-.nav,
+.navigation,
 .location{
 	height: 70px;
 	border: 1px solid green;
@@ -63,14 +63,16 @@ body{
 
 
 
-.nav{
+.navigation{
 	width: 100%;
 	background: linear-gradient(to right, #ebebeb 50%, #474747 50%);
 }
-.nav > .wrapper{
+.navigation > .wrapper{
 	background-color: #474747;
 
 }
+
+/*----------top--------------*/
 
 .top > .wrapper{
 	justify-content: space-between;
@@ -110,8 +112,6 @@ body{
 
 .info_select{
 	width: 345px;
-	border: 1px solid yellow;
-
 	justify-content: space-between;
 }
 
@@ -146,13 +146,15 @@ body{
 	padding-right: 25px;
 }
 
-.button {
+.top .button {
 	height: 36px;
 	width: 36px;
 	background-color: #ebebeb;
 	border-left: 1px solid #d8d8d8;
 	position: relative;
 }
+
+/*------------nav-------------------*/
 
 
 /*------icons for header-------*/
