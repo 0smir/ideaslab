@@ -69,10 +69,14 @@ body{
 }
 .nav > .wrapper{
 	background-color: #474747;
+
 }
 
+.top > .wrapper{
+	justify-content: space-between;
+}
 
-.logo{
+.literal{
 	width: 80px;
 	font-size: 36px;
 	font-family: Nexa;
@@ -82,12 +86,12 @@ body{
 	position: relative;
 }
 
-.logo > span{
+.literal > span{
 	margin: 0 auto;
 
 }
 
-.logo::after{
+.literal::after{
 	content:  ' ';
 	display: block;
 	border: 12px solid transparent;
@@ -97,8 +101,35 @@ body{
 
 }
 
-.top .wrapper > span{
+.top .logo > span{
 	align-self: center;
 	padding-left: 22px;
 	font-size: 18px;
+}
+
+
+.info_select{
+	width: 345px;
+	border: 1px solid yellow;
+	justify-content: space-between;
+}
+
+.info_select > div{
+	font-size: 12px;
+	color: #959595;
+	background-color: #ffffff;
+	align-items: center;
+	box-shadow: 2px 2px 2px 2px #2c2c2c;
+}
+
+.info_select > div:first-child{
+	width: 180px;
+	height: 36px;
+	align-self: center;
+}
+
+.info_select > div:nth-child(2){
+	width: 145px;
+	height: 36px;
+	align-self: center;
 }
