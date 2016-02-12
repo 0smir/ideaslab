@@ -174,8 +174,6 @@ body{
 nav{
 	width: 505px;
 	height: 100%;
-
-	border: 1px solid green;
 }
 
 nav > ul{
@@ -186,6 +184,7 @@ nav > ul{
 
 nav li{
 	list-style: none;
+	position: relative;
 	display: inline-flex;
 	flex-direction: row;
 	align-items: center;
@@ -195,6 +194,16 @@ nav li{
 	padding: 50% 0;
 }
 
+.navigation li:nth-child(n+2):nth-child(-n+5)::after{
+	content: ' ';
+	display: block;
+	height: 11px;
+	width: 1px;
+	background-color: #767676;
+	position: absolute;
+	top: 29px;
+	right: -22px;
+}
 
 .navigation li:hover{
 	border-bottom: 4px solid #f26c4f;
