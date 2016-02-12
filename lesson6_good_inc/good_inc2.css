@@ -56,6 +56,10 @@ body{
 	height: 70px;
 }
 
+.location .wrapper{
+	border: 1px solid red;
+}
+
 .top{
 	background-color: #373737;
 }
@@ -165,7 +169,7 @@ body{
 	text-decoration: none;
 }
 
-.navigation ul{
+ ul{
     -webkit-padding-start: 0;
     margin: 0;
 }
@@ -243,6 +247,34 @@ nav li{
 .minimal_nav > div:nth-child(2) > span{
 
 	padding-right: 20px;
+}
+
+/*--------------location---------------*/
+
+/*--------------social------------------*/
+.location > .wrapper{
+	justify-content: space-between;
+
+}
+
+
+.social > ul{
+	width: 300px;
+	height: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.social li{
+	list-style: none;
+	align-self: center;
+}
+
+.social li > a{
+	color: #8f8f8f;
+	text-decoration: none;
 }
 
 /*------icons for header-------*/
