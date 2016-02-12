@@ -155,23 +155,81 @@ body{
 }
 
 /*------------nav-------------------*/
+.navigation > .wrapper{
+	justify-content: space-between;
+	align-items: center;
+}
 
+.navigation a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.navigation ul{
+	    -webkit-padding-start: 0;
+}
+
+nav li{
+	list-style: none;
+	display: inline-block;
+}
+
+ .minimal_nav{
+ 	width: 320px;
+ 	height: 100%;
+ 	border: 1px solid red;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+
+.minimal_nav div:first-child{
+	width: 110px;
+	height: 25px;
+	border-right: 1px solid #767676;
+	align-items: center;
+	justify-content: center;
+}
+
+.minimal_nav > div:nth-child(2){
+	width: 180px;
+	height: 36px;
+	justify-content: space-between;
+	align-self: center;
+	align-items: center;
+}
+.minimal_nav .button{
+	height: 36px;
+	width: 36px;
+	position: relative;
+}
+
+.minimal_nav > div:nth-child(2) > span{
+
+	padding-right: 20px;
+}
 
 /*------icons for header-------*/
 
 .info_select .fa-map-marker,
-.info_select .fa-clock-o{
+.info_select .fa-clock-o,
+.minimal_nav .fa-map-marker,
+nav .fa-map-marker{
 	color: #f26c4f;
 	font-size: 22px;
 }
 
-.button > .fa-chevron-left{
+
+
+
+.top .button > .fa-chevron-left,
+.minimal_nav .button > .fa-chevron-left{
 	position: absolute;
 	top: 6px;
 	left: 12px;
 }
 
-.button > .fa-chevron-right{
+.top .button > .fa-chevron-right,
+.minimal_nav .button > .fa-chevron-right{
 	position: absolute;
 	bottom: 6px;
 	left: 12px;
