@@ -132,7 +132,7 @@ body{
 }
 
 .info_select > div:first-child > span{
-	padding-right: 50px;
+	padding-right: 45px;
 }
 
 .info_select > div:nth-child(2){
@@ -142,7 +142,7 @@ body{
 }
 
 .info_select > div:nth-child(2) > span{
-	padding-right: 25px;
+	padding-right: 21px;
 }
 
 .top .button {
@@ -246,8 +246,6 @@ nav li{
 }
 
 /*--------------location---------------*/
-
-/*--------------social------------------*/
 .location {
 	color: #8f8f8f;
 }
@@ -295,6 +293,7 @@ nav li{
 .search > div:nth-child(2) span{
 	padding-right: 30px;
 }
+/*--------------social------------------*/
 
 .social > ul{
 	width: 300px;
@@ -353,14 +352,15 @@ nav .fa-map-marker,
 .minimal_nav .button > .fa-chevron-left{
 	position: absolute;
 	top: 9px;
-	left: 15px;
+	left: 14px;
 }
+
 
 .top .button > .fa-chevron-right,
 .minimal_nav .button > .fa-chevron-right{
 	position: absolute;
 	bottom: 9px;
-	left: 15px;
+	left: 14px;
 }
 
 
@@ -378,5 +378,105 @@ nav .fa-map-marker,
 	bottom: 13px;
 	left: 19px;
 }
+/*--------bunner------*/
+
+.bridge{
+	width: 640px;
+	height: 390px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-image: url(images/bridge.jpg);
+	background-repeat: no-repeat;
+	border-right: 10px solid #f26c4f;
+}
+
+.bridge:after{
+	content: ' ';
+	position: absolute;
+	left: 640px;
+	top: 20px;
+	border: 12px solid transparent;
+	border-left: 12px solid #f26c4f;
+}
 
 
+.caption{
+	width: 371px;
+	height: 62px;
+	padding-left: 30px;
+	font-family:'Nexa';
+	font-weight: lighter;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.5);
+	align-self: flex-end;
+	display: flex;
+	align-items: center;
+}
+
+.info{
+	width: 300px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.4);
+	background-color: #373737;
+	box-sizing: border-box;
+	padding: 0 35px 1px;
+	flex-direction: column;
+}
+
+.info h2{
+	font-family:'Nexa';
+	font-weight: 100;
+	font-size: 19px;
+	color: rgba(255, 255, 255, 1);
+}
+
+time{
+	text-align: right;
+}
+.date{
+	margin-top: 20px;
+	justify-content: space-between;
+	padding-bottom: 120px;
+}
+
+.controls{
+	align-self: flex-end;
+	margin-right: -34px;
+}
+
+.controls a{
+	display: inline-block;
+	height: 100%;
+	background-color: rgba(83, 83, 83, 1);
+}
+
+.controls a:first-child{
+	margin-right: -4px;
+}
+
+.controls a:hover{
+	background-color: rgba(83, 83, 83, 0.7);
+}
+
+
+/*--------------icons for main-------------------*/
+.main .fa-clock-o,
+.main .fa-plus{
+	font-size: 18px;
+	font-weight: 100px;
+}
+
+.main .fa-plus,
+.main .fa-chevron-left,
+.main .fa-chevron-right{
+	color: rgba(255, 255, 255, 1);
+}
+
+.main .fa-chevron-left,
+.main .fa-chevron-right{
+	font-size: 15px;
+	padding: 9px;
+}
