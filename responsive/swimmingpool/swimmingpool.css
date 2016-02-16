@@ -1,0 +1,330 @@
+body{
+	font-family: sans-serif, 'Arial Narrow';
+	font-size: 17px;
+}
+
+*{
+	box-sizing: border-box;
+}
+ul{
+    -webkit-padding-start: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+	text-decoration: none;	
+}
+p{
+	margin: 0;
+}
+
+
+
+header{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*-------------------mini navigation----------------------------*/
+.nav_mobail a{
+	height: 100%;
+	border: 1px solid transparent;
+	color: #7d8c9b;
+	padding: 3px 5px;
+	display: inline-block;;
+	align-self: center;
+	
+}
+
+.nav_mobail a:hover{
+	color: #000000;
+	border: 1px solid #bfc3c8;
+	border-radius: 5px;
+	box-shadow: 0px 1px 3px 1px #cbced3;
+}
+
+.nav_mobail{
+
+	display: block;
+	align-self: center;
+}
+/*------------main block----------------*/
+
+	/*--------------styles for links of main block-------------*/
+
+.main a{
+	color: #ffffff;
+	font-family: "Arial Narrow", sans-serif;
+	font-size: 52px;
+	display: inline-flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.main li:nth-child(1) > a
+{
+	background-color: rgba(159, 56, 113, .5);
+}
+
+.main li:nth-child(2) > a{
+	background-color: rgba(244, 250, 88, .5);
+}
+
+.main li:nth-child(3) >a{
+	background-color: rgba(97, 162, 169, .5);
+}
+.main li:nth-child(4) >a{
+	background-color: rgba(8, 30, 169, .5);
+}
+.main li:nth-child(5) >a{
+	background-color: rgba(7, 110, 164, .5);
+}
+.main li:nth-child(6) >a{
+	background-color: rgba(138, 8, 134, .5);
+}
+.main li:nth-child(7) >a{
+	background-color: rgba(244, 250, 88, .4);
+}
+.main li:nth-child(8) >a{
+	background-color: rgba(223, 58, 1, .5);
+}
+
+/*--------styles for list of card----------*/
+.main li:nth-child(1),
+.main li:nth-child(2),
+.main li:nth-child(3),
+.main li:nth-child(4),
+.main li:nth-child(5),
+.main li:nth-child(6),
+.main li:nth-child(7),
+.main li:nth-child(8){
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.main li:nth-child(1){
+	background-image: url(images/champ.png);
+}
+
+.main li:nth-child(2){
+	background-image: url(images/child.png);
+}
+
+.main li:nth-child(3){
+	background-image: url(images/newpool.png);
+}
+
+.main li:nth-child(4){
+	background-image: url(images/interior.png);
+}
+
+
+.main li:nth-child(5){
+	background-image: url(images/training.png);
+}
+
+.main li:nth-child(6){
+	background-image: url(images/sport.png);
+}
+
+
+.main li:nth-child(7){
+	background-image: url(images/celebrity.png);
+}
+
+
+.main li:nth-child(8){
+	background-image: url(images/kid.png);
+}
+
+
+/*------------footer-------------*/
+footer{ 
+	
+	height: 145px;
+	background-color: #1b3144;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items:center;
+}
+
+
+
+.contacts{
+	width: 800px;
+	
+}
+
+.contacts p,
+.desigen p{
+	font-size: 12px;
+	color: #a8b7bb;
+}
+
+.contacts p > a,
+.desigen p > a{
+	color: #1fa0c8;
+	text-decoration: underline;
+}
+
+.social{
+	width: 175px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+.contacts,
+.social,
+.desigen{
+	display: flex;
+	justify-content: space-between;
+}
+
+.desigen{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.fa-phone{
+	color: #a1a9ab;
+}
+
+.contacts p > span{
+	font-family: 'Arial Narrow', sans-serif;
+	font-weight: lighter;
+	font-size: 42px;
+	color: #ffffff;
+}
+
+.social > a{
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	background-color: #4c75a3;
+	border-radius: 50%;
+}
+
+.social .fa-instagram,
+.social span,
+.social .fa-facebook{
+	color: #ffffff;
+	align-self: center;
+}
+
+
+/*-------------------media queries------------------*//*------Portrait----*/
+@media all and  (max-width:320px){ 
+
+
+	.mobail_logo{
+		display: block;
+	}
+
+	.logo{
+		display: none;
+	}
+	
+	.navigation{
+		display: none;
+	}
+
+	.main li:nth-child(1),
+	.main li:nth-child(2),
+	.main li:nth-child(3),
+	.main li:nth-child(4),
+	.main li:nth-child(5),
+	.main li:nth-child(6),
+	.main li:nth-child(7),
+	.main li:nth-child(8){
+		width: 100%;
+		height: 170px;
+		background-size: cover;
+	}
+
+	.main a{
+		font-size: 32px;
+	}
+
+	.contacts{
+		flex-direction: column;
+		justify content: space-around;
+		align-items: center;
+	}
+
+
+	.social{
+		padding-top: 30px;
+	}
+
+	.contacts p:nth-child(2){
+		display: none;
+	}
+
+	.desigen{
+		display: none;
+	}
+
+	.main ul{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+}
+
+@media all and  (min-width:321px) and (max-width:480px){
+
+	.navigation{
+		display: none;
+	}
+
+	.mobail_logo{
+		display: none;
+	}
+
+	.logo{
+		display: block;
+	}
+
+	.desigen{
+		display: none;
+	}
+
+	.contacts p:nth-child(2){
+		display: none;
+	}
+
+	.main a{
+		font-size: 32px;
+	}
+
+	.main li:nth-child(1),
+	.main li:nth-child(2),
+	.main li:nth-child(3),
+	.main li:nth-child(4),
+	.main li:nth-child(5),
+	.main li:nth-child(6),
+	.main li:nth-child(7),
+	.main li:nth-child(8){
+		width: 100%;
+		height: 300px;
+		background-size: cover;
+	}
+
+
+
+}
+
+
