@@ -401,6 +401,10 @@ footer{
 		display: none;
 	}
 
+	.contacts p:nth-child(2){
+		display: none;
+	}
+
 	header{
 		height: 160px;
 	}
@@ -652,13 +656,13 @@ footer{
 	}
 
 	.navigation li > a{
-		color: #7d8c9b;
 		display: block;
 		height: 100%;
 		padding: 27px 0;
 		font-family: 'Consolas', sans-serif;
 		font-weight: 100;
 		text-transform: uppercase;
+		color: #7d8c9b;
 	}
 
 	.navigation li > a:hover{
@@ -680,6 +684,9 @@ footer{
 		flex-direction: row;
 	}
 	
+	.main a{
+		font-size: 50px;
+	}
 
 	.main li:nth-child(1),
 	.main li:nth-child(2),
@@ -708,7 +715,7 @@ footer{
 	}
 
 	.contacts{
-	width: 100%;
+		width: 750px;
 	}
 
 	.social {
@@ -717,6 +724,14 @@ footer{
 
 	.contacts p > span{
 		font-size: 35px;
+	}
+
+	.contacts p{
+		font-size: 12px;
+	}
+
+	.desigen p{
+		font-size: 10px;
 	}
 	
 }
@@ -882,7 +897,7 @@ footer{
 	.main li:nth-child(2),
 	.main li:nth-child(3),
 	.main li:nth-child(4){
-		height: 488px;
+		height: 466px;
 	}
 
 	.main li:nth-child(1),
@@ -900,7 +915,7 @@ footer{
 	.main li:nth-child(6),
 	.main li:nth-child(7),
 	.main li:nth-child(8){
-		height: 258px;
+		height: 295px;
 		background-size: cover;
 	}
 
