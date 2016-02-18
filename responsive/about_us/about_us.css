@@ -1,7 +1,6 @@
 body{
 	font-family: sans-serif, 'Arial Narrow';
 	font-size: 17px;
-	background-image: url(images/);
 }
 
 *{
@@ -27,10 +26,13 @@ header{
 	height: 80px;
 	position: fixed;
 	top: 0;
-	background-color: rgba(255, 255, 255, .4);
+	background-color: rgba(255, 255, 255, .9);
+	box-shadow: inset 372px 31px 50px 20px #ffffff;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+
+
 }
 
 /*-------------------mini navigation----------------------------*/
@@ -86,6 +88,45 @@ header{
 
 /*-----------------block banner---------------------*/
 
+.main{
+	width: 100%;
+	background-image: url(images/pool.png);
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+}
+
+.banner,
+.massege{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	border: 1px solid red;
+}
+
+.banner{
+	height: 584px;
+	color: #ffffff;
+}
+
+.massege{
+	margin: auto;
+	
+}
+
+.wrapper{
+	width: 100%;
+	
+}
+
+
+.content{
+	width: 1097px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+}
 
 
 
