@@ -42,14 +42,71 @@ body{
 .wrapper{
 	width: 940px;
 	margin: 0 auto;
-	background-color: #373737;
+	
 }
 
 .flex{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
+}
+/*---------------header-------------*/
+
+header{
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
 }
 
+header > .wrapper{
+
+}
+
+
+.logo{
+	height: 68px;
+	font-family: Nexa;
+	font-weight: lighter;
+	font-size: 18px;
+	background-color: #373737;
+	color: #ffffff;
+	display: flex;
+	align-items: center
+}
+
+.logo span{
+	display: flex;
+	align-items: center;
+	
+	font-size: 36px;
+	font-family: Nexa;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #f26c4f;
+	
+}
+
+nav{
+	width: 940px;
+	height: 70px;
+	background-color: #474747;
+	align-items: center;
+}
+
+nav li{
+	list-style: none;
+	display: inline-block;
+}
+nav li > a{
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Nexa;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.location{
+	background-color: #ebebeb;
+}
 /*--------bunner------*/
 
 .bridge{
@@ -92,6 +149,7 @@ body{
 	width: 300px;
 	font-weight: 300;
 	color: rgba(255, 255, 255, 0.4);
+	background-color: #373737;
 	box-sizing: border-box;
 	padding: 0 35px 1px;
 	flex-direction: column;
