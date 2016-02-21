@@ -123,14 +123,21 @@ ul{
 }
 
 /*---------servires----------------*/
-.services{
-	padding: 15px 0 15px 18px;
+
+.services,
+.log-in{
 	border-radius: 10px;
 	background-color: rgba(81, 72, 79, .6);
 }
 
+.services{
+	padding: 15px 0 15px 18px;
+}
+
+
 .button-serv,
-.btn-search{
+.btn-search,
+.log-in > a{
 	color: #ffffff;
 	border: 1px solid rgba(255, 255, 255, .9);
 	font-size: 17px;
@@ -181,4 +188,17 @@ ul{
 	border: 1px solid #ffffff;
 	border-radius: 10px;
 }
+/*--------------log-in-------------*/
+.log-in{
+	padding: 11px 0 9px 28px;
+}
 
+.log-in > a{
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.fa-sign-in{
+	font-size: 35px;
+	vertical-align: middle;
+}
