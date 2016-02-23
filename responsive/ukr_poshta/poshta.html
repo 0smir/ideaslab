@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>UkrPoshta</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -17,45 +18,53 @@
 
 </head>
 <body>
-
-	<div class="banner">
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-8">
-						<div class="logo">
-							<a href="#"><img src="images/logo.png" class="img-responsive" alt="logo"></a>
-						</div>
-					</div>
-					<div class="col-lg-10">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="row">
-									<div class="col-lg-3 col-lg-offset-5 col-md-offset-3 col-md-3 col-sm-3 hidden-xs">
-										<div class="lang">
-											<ul class="list-inline">
-												<li><a href="http://ktonanovenkogo.ru/html/bootstrap/setochnaya-sistema-bootstrap-3-primer-raboty-chast-2.html">UA</a>&#124;</li>
-												<li><a href="#">RU</a>&#124;</li>
-												<li><a href="#">EN</a>&#124;</li>
-											</ul>
-										</div><!--lang-->
-									</div>
-									<div class="hidden-lg hidden-md hidden-sm col-xs-4">
-										<div class="menu">
-											<a href="#"><i class="fa fa-bars fa-3x"></i></a>
-										</div>
-									</div>
-									<div class="col-lg-3 col-lg-offset-1 col-md-3 col-sm-3 hidden-xs">
-										<form id="search-in-menu" class="form-search" method="get" action="#">
-											<input class="search-query" type="text" form="search-in-menu" placeholder="Пошук...">
-											<button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
-										</form>
-									</div>
+	<div id="page-wpapper">
+		<div class="first-page">
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+							<div class="logo">
+								<a href="#"><img src="images/logo.png" class="img-responsive" alt="logo"></a>
+							</div>
+						</div><!-- col-block for logo-->
+						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-6">
+							<div class="row">
+								<div class="hidden-xs col-">
+									<div class="lang">
+										<ul class="list-inline">
+											<li><a href="http://ktonanovenkogo.ru/html/bootstrap/setochnaya-sistema-bootstrap-3-primer-raboty-chast-2.html">UA</a>&#124;</li>
+											<li><a href="#">RU</a>&#124;</li>
+											<li><a href="#">EN</a>&#124;</li>
+										</ul>
+									</div><!--lang-->
 								</div>
-								<div class="menu">
-									<div class="row">
-										<div class="col-lg-12 col-lg-offset-0 col-md-offset-0 col-md-9 hidden-sm hidden-xs">
-											<nav class="list-inline">
+								<div class="hidden-xs col-">
+									<form id="search-in-menu" class="form-search" method="get" action="#">
+										<input class="search-query" type="text" form="search-in-menu" placeholder="Пошук...">
+										<button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+									</form>
+								</div>
+								<div class="hidden-xs col-">
+									<nav class="list-inline">
+										<li><a href="#">Про підприємство</a></li>
+										<li><a href="#">Послуги</a></li>
+										<li><a href="#">Тарифи</a></li>
+										<li><a href="#">Проекти та акції</a></li>
+										<li><a href="#">Новини</a></li>
+										<li><a href="#">Довідка</a></li>
+										<li><a href="#">Філателія</a></li>
+										<li><a href="#">Контакти</a></li>
+										<li><a href="#">Дирекції</a></li>
+									</nav>
+								</div>
+								<div class="col-xs-6 col-xs-offset-6 hidden-sm hidden-md hidden-lg">
+									<div class="dropdown mmenu">
+										<a href="#" class="btn dropdown-toggle" type="button" id="mobmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											<i class="fa fa-bars fa-3x"></i>
+										</a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<nav >
 												<li><a href="#">Про підприємство</a></li>
 												<li><a href="#">Послуги</a></li>
 												<li><a href="#">Тарифи</a></li>
@@ -67,86 +76,14 @@
 												<li><a href="#">Дирекції</a></li>
 											</nav>
 										</div>
-									</div><!--row-->
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div><!--row-->
-			</div><!--container-->
-		</header>
-		<div class="center">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h1 class="text-center">УКРПОШТА  - ТАМ, ДЕ ПОТРIБНО ВАМ!</h1>
-					</div>
-				</div>
-			</div>
-		</div><!--center-->
-		<div class="main-info">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<ul class="list-inline services">
-							<li class="dropup"><a href="#" class="button-serv dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Замиовити</a>
-								<ul class="dropdown-menu serv-info">
-									<li><a href="#">Кур’єрську доставку</a></li>
-									<li><a href="#">Власну марку</a></li>
-									<li><a href="#">Електронний квиток</a></li>
-									<li><a href="#">Поштові марки</a></li>
-									<li><a href="#">Страхування</a></li>
-									<li><a href="#">Страхування</a></li>
-					            </ul>
-							</li>
-							<li class="dropup"><a href="#" class="button-serv dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Оплата</a>
-								<ul class="dropdown-menu serv-info">
-									<li><a href="#">Кур’єрську доставку</a></li>
-									<li><a href="#">Власну марку</a></li>
-									<li><a href="#">Електронний квиток</a></li>
-									<li><a href="#">Поштові марки</a></li>
-									<li><a href="#">Страхування</a></li>
-									<li><a href="#">Страхування</a></li>
-					            </ul>
-							</li>
-							<li class="dropup"><a href="#" class="button-serv dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Доставка</a>
-								<ul class="dropdown-menu serv-info">
-									<li><a href="#">Кур’єрську доставку</a></li>
-									<li><a href="#">Власну марку</a></li>
-									<li><a href="#">Електронний квиток</a></li>
-									<li><a href="#">Поштові марки</a></li>
-									<li><a href="#">Страхування</a></li>
-									<li><a href="#">Страхування</a></li>
-					            </ul>
-							</li>
-							<li class="dropup"><a href="#" class="button-serv dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Перекази</a>
-								<ul class="dropdown-menu serv-info">
-									<li><a href="#">Кур’єрську доставку</a></li>
-									<li><a href="#">Власну марку</a></li>
-									<li><a href="#">Електронний квиток</a></li>
-									<li><a href="#">Поштові марки</a></li>
-									<li><a href="#">Страхування</a></li>
-									<li><a href="#">Страхування</a></li>
-					            </ul>
-							</li>
-							<li class="dropup"><a href="#" class="button-serv dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Передплата</a>
-							<ul class="dropdown-menu serv-info">
-									<li><a href="#">Кур’єрську доставку</a></li>
-									<li><a href="#">Власну марку</a></li>
-									<li><a href="#">Електронний квиток</a></li>
-									<li><a href="#">Поштові марки</a></li>
-									<li><a href="#">Страхування</a></li>
-									<li><a href="#">Страхування</a></li>
-					            </ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div><!--container-->
+						</div><!-- block for search lang & nav -->
+					</div><!--row-->
+				</div><!-- container-->
+			</header>
 		</div>
-	</div><!--banner-->
-
-		
-
+	</div>
 </body>
 </html>

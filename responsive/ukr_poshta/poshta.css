@@ -1,9 +1,10 @@
 
-.banner{
+.first-page{
 	min-height: 730px;
 	background-image: url(images/field_foolpage.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	background-size: cover;
 }
 
 header{
@@ -201,4 +202,30 @@ ul{
 .fa-sign-in{
 	font-size: 35px;
 	vertical-align: middle;
+}
+
+.mmenu{
+	margin-top: 15px;
+}
+
+.dropdown-menu{
+	min-width: 200px;
+	max-width: 300px;
+	background-color: cyan;
+}
+
+@media all and (max-width: 768px){
+
+}
+
+@media all and (min-width: 769px) and (max-width: 992px){
+
+}
+
+@media all and (min-width: 993px) and (max-width: 1200px){
+
+}
+
+@media all and (min-width: 1201px){
+
 }
