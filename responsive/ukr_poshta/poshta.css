@@ -108,7 +108,7 @@ header a{
 	padding-left: 10px;
 	min-width: 250px;
 	max-width: 300px;
-	background-color: rgba(81, 72, 79, .3);
+	background-color: rgba(81, 72, 79, .6);
 	border: 1px solid rgba(81, 72, 79, .7);
 	box-shadow: inset 0px 6px 32px 4px rgba(81, 72, 79, .3);
 }
@@ -148,47 +148,265 @@ header a{
 	font-size: 16px;
 }
 
-.main-menu>li>a:link{
+.menu{
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.menu>li{
+	margin-top: 10px;
+}
+
+.menu>li>a{
+	display: block;
+}
+
+.main-menu>li>a:link,
+.menu>li>a:link{
 	padding: 5px 6px;
 	border: 1px solid transparent;
 	border-radius: 10px;
 }
 
-.main-menu>li>a:visited{
+.main-menu>li>a:visited,
+.menu>li>a:visited{
 	color: #ffffff;
 	text-decoration: none;
 }
 
-.main-menu>li>a:hover{
+.main-menu>li>a:hover,
+.menu>li>a:hover{
 	color: #ffffff;
 	text-decoration: none;
 	border: 1px solid #ffffff;
 	background-color: rgba(225, 225, 225, .6);
 }
 
-.main-menu>li>a:active{
+.main-menu>li>a:active,
+.menu>li>a:active{
 	color: #ffffff;
 	text-decoration: none;
 }
 
+/*------------------.center---------------------*/
+.center h1{
+	font-size: 48px;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	color: #ffffff;
+	padding: 140px 0 240px; 
+	text-shadow: 4px 1px 15px #979296,
+				 2px 1px 1px #979296;
+	text-transform: uppercase;
+
+}
+
+/*-----------------main-info------------------------*/
+.services,
+.log-in{
+	border-radius: 10px;
+	background-color: rgba(81, 72, 79, .6);
+}
+
+.services{
+	padding: 12px;
+	margin: 0;
+	display: inline-flex;
+}
+
+.services > li>a{
+	display: inline-block;
+}
+
+.button-serv,
+.log-in > a{
+	color: #ffffff;
+	border: 1px solid rgba(255, 255, 255, .9);
+	border-radius: 10px;
+	font-size: 17px;
+}
 
 
-@media all and (max-width: 768px){
+.button-serv{
+	background-color: rgba(255, 255, 255, .1);
+	padding: 7px 5px 7px 5px;
+}
+
+.button-serv:visited,
+.log-in > a:visited{
+	color: #ffffff; 
+	text-decoration: none;
+}
+
+
+.button-serv:hover,
+.log-in > a:hover,
+.button-serv:active,
+.log-in > a:active{
+	color: #ffffff; 
+	text-decoration: none;
+}
+
+.button-serv:hover{
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.button-serv:focus{
+	background-color: rgba(255, 255, 255, .5);
+}
+
+#serv-info{
+	border-radius: 10px;
+	border: 1px solid rgb(81, 72, 79);
+	background-color: rgba(81, 72, 79, .6);
+}
+
+#serv-info>li>a{
+	color: #ffffff;
+	border: 1px solid transparent;
+}
+
+#serv-info>li>a:hover{
+	color: #ffffff;
+	background: rgba(255, 255, 255, .3); 
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+}
+
+.services{
+		width: 100%;
+		display: flex;
+
+	}
+
+/*--------------log-in-------------*/
+.log-in{
+	padding: 8px;
+	display: flex;
+	justify-content: center;
+}
+
+.log-in > a{
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.log-in > a:hover{
+	background-color: rgba(255, 255, 255, .5);
+}
+.fa-sign-in{
+	font-size: 35px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+@media all and (min-width: 320px) and (max-width: 480px){
+
+	.services{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+
+	.services>li{
+		width: 100%;
+	}
+
+	.services > li>a{
+		display: block;
+		width: 100%;
+	}
+
+	.dropup #serv-info{
+		margin-bottom: 10px;
+	}
+
+
+	.dropup #serv-info{
+		margin-bottom: 5px;
+	}
+
+	#serv-info {
+		background-color: rgba(81, 72, 79, .9);
+	}
+
+}
+
+
+@media all and (min-width: 481px) and (max-width: 767px){
 	.search-query{
 		margin: 10px 0 0;
 	}
+
+	.dropup #serv-info{
+		margin-bottom: 15px;
+	}
+
+	.services{
+		width: 100%;
+	}
+
+
+	.dropup #serv-info{
+		margin-bottom: 15px;
+	}
+
+	.services{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		
+	}
+	
 }
 
-@media all and (min-width: 769px) and (max-width: 992px){
+@media all and (min-width: 768px) and (max-width: 992px){
 	.search-query{
 		margin: 10px 10px 0 0;
 	}
+
+	.dropup #serv-info{
+		margin-bottom: 15px;
+	}
+
+	.services > li>a{
+		display: inline-block;
+	}
+
+	.services{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
 
 @media all and (min-width: 993px) and (max-width: 1200px){
 
 	.search-query{
 		margin: 10px 10px 0 22px;
+	}
+
+	.dropup #serv-info{
+		margin-bottom: 15px;
+	}
+
+	.services{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+
+	.button-serv{
+		font-size: 17px;
 	}
 }
 
@@ -201,5 +419,16 @@ header a{
 	.main-menu{
 		margin-left: 28px;
 	}
+
+	.dropup #serv-info{
+		margin-bottom: 15px;
+	}
+
+	.services{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
 
 }
