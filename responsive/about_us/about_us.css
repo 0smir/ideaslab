@@ -1,5 +1,26 @@
+@font-face{
+	font-family: 'Arial-Narrow-Bold';
+	src: url(fonts/subset-ArialNarrow-Bold.eot),
+		 url(fonts/subset-ArialNarrow-Bold.svg),
+		 url(fonts/subset-ArialNarrow-Bold.ttf),
+		 url(fonts/subset-ArialNarrow-Bold.woff),
+		 url(fonts/subset-ArialNarrow-Bold.woff2);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Arial-Narrow-Regular';
+	src: url(fonts/subset-ArialNarrow.eot),
+		 url(fonts/subset-ArialNarrow.svg),
+		 url(fonts/subset-ArialNarrow.ttf),
+		 url(fonts/subset-ArialNarrow.woff),
+		 url(fonts/subset-ArialNarrow.woff2);
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
-	font-family: sans-serif, 'Arial Narrow';
 	font-size: 17px;
 }
 
@@ -28,13 +49,20 @@ header{
 	box-shadow: inset 0 31px 50px 20px #ffffff;
 }
 
+header,
+.banner,
+.footer-art{
+	display: flex;
+}
+
+
+
 .wrapper{
-	max-width: 1150px;
+	width: 1150px;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-   	
+	justify-content: space-around;	
 }
 
 /*-------------------mini navigation----------------------------*/
@@ -94,10 +122,39 @@ header{
 
 .main{
 	width: 100%;
-	
 	background-repeat: no-repeat;
 	background-color: #ffffff;
 }
+
+.main-info{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Arial-Narrow-Regular', sans-serif;
+
+}
+
+.main-info > h2{
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 42px;
+	font-family: 'Arial-Narrow-Regular', sans-serif;
+	font-weight: 100;
+	margin: 0;
+	border-bottom: 1px solid #c9d2d7;
+}
+
+
+
+
+.treat-text{
+	max-width: 1095px;
+	font-family: 'Arial-Narrow-Regular', sans-serif;
+	font-size: 18px;
+	color: #5a6772;
+}
+
+
+
 
 /*-----------------block banner---------------------*/
 
@@ -107,35 +164,117 @@ header{
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	/*border: 1px solid red;*/
+	/*justify-content: flex-end;
+	border: 1px solid red;*/
 }
 
-.banner{
-	height: 383px;
-	color: #ffffff;
-	background-image: url(images/pool.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.massege{
-	padding-top: 100px;
-}
-/*----------------------------------------*/
+.banner,
 .treatment,
 .history,
 .partners,
 .responsibility{
 	min-height: 383px;
+	display: flex;
+	flex-direction: column;
+	
 }
 
+.banner{
+	color: #ffffff;
+	background-image: url(images/pool.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: space-between;
+}
+
+.massege{
+	padding-top: 100px;
+}
+
+.foooter-art > .wrapper{
+	display: flex;
+	flex-wrap: nowrap;
+
+}
+
+/*----------------------------------------*/
+
+
 .main >div:nth-child(n+3):nth-child(odd){
+	background-color: #0092c4;
+}
+
+.treatment,
+.partners{
+	color: #5a6772;
+}
+
+.history,
+.responsibility{
+	color: #ffffff;
+}
+
+/*-----------------drop-----------*/
+
+
+.drop{
+	width: 160px;
+	height: 72px;
+}
+
+.person,
+.logo-blue,
+.link,
+.heart{
+	display: flex;
+	align-items: center;
+	border: 1px solid red;
+}
+
+.person{
+	background-image: url(images/dropwhite.png);
+	background-position: -30px -20px;
+}
+
+.logo-blue{
+	background-image: url(images/dropblue.png);
+	background-color: white;
+	background-position: -30px -31px;
+}
+
+.link{
+	background-image: url(images/dropwhite.png);
+	background-color: #0092c4;
+	background-position: -30px -20px;
+}
+
+.heart{
+	background-image: url(images/dropblue.png);
+	background-color: #ffffff;
+	background-position: -30px -31px;
+}
+
+.history > .footer-art .left-side,
+.responsibility >.footer-art .left-side{
 	background-color: #0092c4;
 }
 
 
 
 
+.person>img,
+.logo-blue>img,
+.link>img,
+.heart>img{
+	margin: 0 auto;
+}
+
+.left-side{
+	width: 86.086956522%;/*990px *100 %/ 1150px*/
+	min-width: 320px;
+	height: 72px;
+	background-color: #ffffff;
+}
 
 /*------------footer-------------*/
 footer{ 
@@ -471,6 +610,21 @@ footer{
 
 	.banner{
 		height: 583px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 }
+
+@media all and (min-width:1281px){
+	.mobail_logo{
+		display: none;
+	}
+
+
+	.nav_mobail{
+		display: none;
+	}
+}
+
