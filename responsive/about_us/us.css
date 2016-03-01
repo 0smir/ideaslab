@@ -55,7 +55,6 @@ header{
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
-	border: 1px solid red;
 }
 
 header > .wrapper{
@@ -246,12 +245,30 @@ header > .wrapper{
 	margin: 0 auto;
 }
 
+/*---------------------------------*/
+.treatment .content{
+	padding: 55px 0 80px;
+	display: flex;
+	justify-content: flex-start;
+}
 
+.treatment .content >div:first-child{
+	margin-right: 28px;
+}
 
+.treatment .content p{
+	padding-bottom: 30px;
+}
 
+.treatment .content div:nth-child(2){
+	padding: 0 28px 0;
+}
 
-
-
+.sign{
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
 
 
 /*------------footer-------------*/
@@ -592,6 +609,7 @@ footer > .wrapper{
 }
 
 @media all and (min-width:1026px) and (max-width:1280px){
+
 	.mobail_logo{
 		display: none;
 	}
@@ -606,6 +624,17 @@ footer > .wrapper{
 
 	.banner{
 		height: 583px;
+	}
+
+	.content{
+		width: 1095px;
+		margin: auto;
+		border: 1px solid red;
+	}
+
+	header .wrapper,
+	footer .wrapper{
+		max-width: 1150px;
 	}
 
 }
@@ -635,4 +664,9 @@ footer > .wrapper{
 		width: 1150px;
 	}
 	
+	.content{
+		width: 1095px;
+		border: 1px solid red;
+		margin: auto;
+	}
 }
