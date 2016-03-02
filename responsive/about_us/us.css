@@ -160,7 +160,6 @@ header > .wrapper{
 
 .header-art{
 	width: 100%;
-	border: 1px solid red;
 }
 
 .header-art > .wrapper{
@@ -180,19 +179,21 @@ header > .wrapper{
 	font-size: 30px;
 	font-family: 'Arial-Narrow-Regular', sans-serif;
 	font-weight: 100;
-	margin: 0;
+	margin: 0 0 25px;
 	
 }
 
 .article-name{
 	width: 100%;
 	margin: 0 auto;
+	border-bottom: 1px solid #c9d2d7;
 }
 
 .dropp{
 	width: 160px;
 	height: 72px;
 }
+
 
 .person,
 .logo-blue,
@@ -228,6 +229,10 @@ header > .wrapper{
 
 .banner .dropp{
 	box-shadow: -160px 0px 0px 0px #ffffff,
+				700px 0px 0px 0px #ffffff,
+				540px 0px 0px 0px #ffffff,
+				380px 0px 0px 0px #ffffff,
+				260px 0px 0px 0px #ffffff, 
 				160px 0px 0px 0px #ffffff;
 }
 
@@ -245,7 +250,21 @@ header > .wrapper{
 	margin: 0 auto;
 }
 
-/*---------------------------------*/
+/*-----------------content----------------*/
+
+.content{
+	padding: 55px 0 80px;
+}
+
+.content p{
+	padding-bottom: 30px;
+}
+/*--------------banner--------------------------*/
+.banner .content{
+	margin-top: 80px;
+	text-align: center;
+}
+/*-------------.treatment .content------------*/
 .treatment .content{
 	padding: 55px 0 80px;
 	display: flex;
@@ -269,7 +288,28 @@ header > .wrapper{
 	display: flex;
 	justify-content: space-between;
 }
+/*--------------history content---------------*/
+/*__________________partner________________*/
+.partners ul{
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+}
 
+.partners ul li{
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	width: 33%;
+}
+
+.partners ul > li >a{
+	display: block;
+	height: 100%;
+	margin: auto;
+}
 
 /*------------footer-------------*/
 footer{ 
@@ -666,7 +706,12 @@ footer > .wrapper{
 	
 	.content{
 		width: 1095px;
-		border: 1px solid red;
 		margin: auto;
 	}
+}
+
+@media all and (min-width: 1690px){
+	.banner > .header-art{
+	background: linear-gradient(to right, #ffffff 70%, transparent 30%);
+}
 }
