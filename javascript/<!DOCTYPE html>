@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ClassRoom</title>
+</head>
+
+	<script>
+
+var human = ['petrov', 'alex', 2025];
+//console.log(human);
+//console.log(human[0], human[1]);
+
+
+var human1 = {
+name : 'alex',
+firstname : 'petrov',
+age : 21,
+}
+//console.log(human);
+//console.log(human['name']);
+
+
+var human2 = {
+name : 'peter',
+firstname : 'petrov',
+age : 21,
+}
+
+var classroom = [ human1,  human2 ];
+console.log(classroom);
+
+
+var slider = {
+next: function(){
+console.log('next slide');
+}
+, prev: function(){
+console.log('prev slide');
+}
+}
+
+slider['next']();
+slider['next']();
