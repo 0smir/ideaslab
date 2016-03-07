@@ -1,0 +1,32 @@
+
+#slider{
+	height: 500px;
+	width: 700px;
+	/*overflow: visible;*/
+	overflow: hidden;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+#slide-container{
+	width: 7000px;
+	padding: 0;
+	margin-left: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	list-style: none;
+}
+
+li{
+	display: flex;
+	justify-content: center;
+	width: 700px;
+	background-color: white;
+}
+
+
+a{
+	display: block;
+	height: 100%;
+}
