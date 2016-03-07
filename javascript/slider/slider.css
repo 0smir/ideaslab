@@ -8,9 +8,10 @@
 	margin: 0 auto;
 }
 
-ul{
+#slide-container{
 	width: 7000px;
 	padding: 0;
+	margin-left: 0;
 	margin: 0;
 	height: 100%;
 	display: flex;
