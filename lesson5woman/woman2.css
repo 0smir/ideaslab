@@ -371,6 +371,16 @@ article img{
 	float: left;
 }
 
+
+.cooking p{
+	margin: 15px 0 0 200px;
+}
+
+.cooking h3{
+	margin: 0 0 0 200px;
+	padding-top: 10px;
+}
+
 .style{
 	margin: 0 20px 0 0;
 }
@@ -386,8 +396,9 @@ article img{
 }
 
 /* ---------------- footer------------*/
-footer{
+.footer{
 	width: 100%;
+	margin-top: 100px;
 }
 .footerlogo{
 	width: 190px;
