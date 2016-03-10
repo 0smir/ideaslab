@@ -8,13 +8,13 @@
 	console.log('bla1\u0020' + 'bla1');
 	console.log('bla2\u0009' + 'bla2');
 	console.log('bla' + '\u000B' + 'bla');
-	/*console.log('bla' + '\u000D' + 'bla');*/
-	/*
-	*console.log('bla' + '\u2028' + 'bla');
-	*console.log('bla' + '\u2028' + 'bla');
-	*console.log('bla' + '\u2028' + 'bla');
-	*console.log('bla' + '\u2028' + 'bla');
-	*/
+	
+	var then = new Date(2010,0,1);
+	var later = new Date(2010,0,1,2,3,4,17,18,30);
+
+
+	console.log(later.toLocaleDateString());
+	
 </script>
 <body>
 
