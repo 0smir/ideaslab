@@ -1,0 +1,93 @@
+#slider{
+	height: 500px;
+	width: 700px;
+	/*overflow: visible;*/
+	overflow: hidden;
+	position: relative;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+#slide-container{
+	width: 7000px;
+	padding: 0;
+	margin-left: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	list-style: none;
+}
+
+li{
+	display: flex;
+	justify-content: center;
+	width: 700px;
+	background-color: white;
+}
+
+
+a{
+	display: block;
+	height: 100%;
+}
+
+button{
+	border: 1px solid red;
+	border-radius: 10px;
+	height: 30px;
+	width: 30px;
+	background-color: orange;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+
+.controls{
+	position: absolute;
+	left: 15px;
+	bottom: 12px;
+}
+
+.controls span{
+	opacity: 0.9;
+	background: #fff;
+	margin: 0 8px 0 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	overflow: hidden;
+	display: block;
+	float: left;
+	box-shadow: 0 1px 2px #000;
+}
+
+.controls span .active{
+	background: #2e9419;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:visited{
+	color: red;
+	text-decoration: none; 
+}
+
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+#prev{
+	position: absolute;
+	left: 2px;
+	top: 50%;
+}
+
+#next{
+	position: absolute;
+	right: 2px;
+	top: 50%;
+}
