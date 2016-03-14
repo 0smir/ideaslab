@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>String</title>
+
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<script>
+	var a = "Hello, world";
+	console.log(a.charAt(0));// возвращает указанный символ из строки
+	console.log(a.charAt(1));
+	console.log(a.charAt(2));
+	console.log(a.charAt(3));
+	console.log(a.charAt(4));
+	console.log(a.charAt(5));
+	console.log(a.charAt(6));
+	console.log(a.charAt(7));
+	console.log(a.charAt(8));
+	console.log(a.charAt(9));
+	console.log(a.charAt(10));
+	console.log(a.charAt(11));
+	console.log(a.length);//общая длинна
+	console.log(a.charAt(a.length-1)); //последний символ
+	console.log(a.charAt(a.length-2));// символ перед последним
+	console.log(a.substring(1,4));//выводит символы начиная с 1 потом 2 и 3, но не включает в себя 4
+	console.log(a.slice(1,4));//выводит символы начиная с 1 потом 2 и 3, но не включает в себя 4
+	console.log(a.slice(-3));//выводит последние три символа(т.е. если указать отрицательное значение то будет извлекать указанное кол-во символов, но с конца строки)
+	console.log(a.indexOf("o"));//выводить индекс символа(отсчет индекса начинаеться с 0)
+	console.log(a.lastIndexOf("o"));//иыводить индекс последнего символа "о"
+	console.log(a.indexOf("o", 2));// выводит индекс символа"о", котороый после 2-го символа в строке  идет
+	console.log(a.indexOf("o", 5));
+	console.log(a.split(","));//разбивает объект String на массив строк путём разделения строки указанной подстрокой.в данном случае разделителем служет запятая! В итогу у нас выйдет массив с двумя значениями Hello и  world, если разделитель не указать, то будет массив с одним значением Б который будет равен нашей строке
+	console.log(a.split("d"));// не обязательно выбирать как разделительзнаки припенания - им может быть и буква. В данном случае выйдет массив с первым значением наша строка целиком , а второе значение пустое
+	console.log(a.replace("e", "H")); //возвращвет строку с изменениями согласно шаблону(мы заменили все буквы"е" на "H")
+	console.log(a.replace(a, "Hall"));//можно заменить не только буквы но и строку в целом
+	console.log(a.toUpperCase(a));// ВСЕ буквы загдавные
+	console.log(a.toUpperCase());// так тоже сработает
+	console.log((a.slice(1,4)).toUpperCase());
+	var re = /l/gi;//что б заменить ве буквы "l" в нашей строке пришлось применить регулярные выражения /l/ -это паттерн gi - флаг обозначающий, что патерн глобальный
+	var newa = a.replace(re, "L")
+	console.log(newa);
+	</script>
+</head>
+<body>
