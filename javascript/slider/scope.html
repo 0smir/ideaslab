@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Scope</title>
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	
+</head>
+<body>
+	<div class="test">1</div>
+	<button>run</button>
+	<script>
+		(function(){
+
+			var interval = null;
+			function runTimer(){
+
+				if(interval !== null){
+					return false;
+				}
+
+				interval = setInterval( function(){
+
+					var num = $('.test').html();
+					num++;
+					$('.test').html(num);
+				},100);
+			}
+			function stopTimer(){
+				clearInterval(interval);
+			}
+			
+			runTimer();
+
+			$('.test').mouseover(stopTimer);
+			$('.test').mouseout(runTimer);
+			$('button').click(runTimer);
+		})();
+		//ошибки в модуле не попадают в консоль (сейчас уже обновили); заключать скрипт в модуль надо в самом конце
+		//после того как код проверен
+	</script>
+</body>
+</html>
