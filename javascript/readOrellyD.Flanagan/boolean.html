@@ -66,15 +66,37 @@
 	// console.log(y);
 
 	var c = ['s', 'n', 'z'];
-	var b = ['s', 'n', 'z', 'g'];
-	function equalArrays(c, m){
-		if (c.length != b.length) return false;
+	var b = ['s', 'n', 'z'];
+	function equalArrays(c, b){
+
+		if(c.length != b.length) return false;
 			for(var i = 0; i < c.length; i++)
-				if(a[i] !== b[i]) return false;
+				if (c[i] !== b[i]) return false;
+
 			return true;
 	}
-	console.log(c = b);
-	console.log(c == b);
+	console.log(c.length != b.length);
+	
+
+	var d = x + '', 
+		x = 10;
+		v = +x,
+		z = !!x;
+
+	console.log(typeof(d));
+	console.log(typeof(v));
+	console.log(typeof(z));
+
+	var k = 17;
+	binary_string = k.toString(2);
+	octal_string = "0" + k.toString(8);
+	hex_string = "0x" + k.toString(16);
+
+	console.log(binary_string);
+	console.log(octal_string);
+	console.log(hex_string);
+
+
 	</script>
 </body>
 </html>
