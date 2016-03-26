@@ -33,6 +33,32 @@
 	console.log('свой­ст­во­ x ­вы­ра­же­ния ­a[0]:' + a[0].x);
 	console.log('свой­ст­во­ z­ вы­ра­же­ния­ o.y: ' + o.y.z );
 
+
+	//Оператор in
+
+	var point = { x:1, y:1};
+	console.log("x" in point);//true
+	console.log("z" in point);//false
+	console.log("toString" in point);//true
+
+	var data = [7, 8, 9];
+	console.log("0" in data);//true
+	console.log(1 in data);//true
+	console.log(3 in data);//false
+
+	//Оператор instanceof
+
+	var f = new Date();
+	console.log(typeof(f));
+	console.log(f instanceof Date);//true
+	console.log(f instanceof Object);//true
+	console.log(f instanceof Number);//false it is not a namber it is object;
+
+
+	var g = [1, 2, 3];
+	console.log(g instanceof Array);//true 
+	console.log(g instanceof Object);//true
+	console.log(g instanceof RegExp);//false
 	</script>
 </body>
 </html>
