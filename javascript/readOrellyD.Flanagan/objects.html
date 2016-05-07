@@ -32,7 +32,38 @@
 					}
 				};
 		console.log(book);
+
+	var author = book.author;
+	var name = author.lastname;
+	var title = book["main title"];
+	console.log(author, name, title);
+
+	book.paging = 1077;
+	book["title"] = "ECMAScript"; 
+	console.log(book);
+
+	 
+	var portfolio = { IBM:50};
+		function addstock(portfolio, stockname, shares){
+			portfolio[stockname] = shares;
+		}
+
+		
+
+		function getvalue(portfolio){
+			var total = 0.0;
+			for(stock in portfolio){
+				var shares = portfolio[stock];
+				var prise = getquoter(stock);
+				total += shares * prise;
+
+			}
+			return total;
+		}
+		console.log(total);
+	
 </script>
+
 
 </body>
 </html>
