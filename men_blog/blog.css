@@ -11,6 +11,7 @@ body{
 	src: url(fonts/minionpro-regular.otf);
 }
 
+
 a{
 	text-decoration: none;
 }
@@ -48,13 +49,18 @@ time{
 
 /*-------nav---------------------------*/
 .top{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 	align-items: center;
+	-webkit-align-items: center;
 }
 
 h1{
-	font-family: 'Minionpro';
+	font-family: 'Minionpro', sans-serif;
 	font-size: 30px;
 	font-weight: 300;
 	color: #848484;
@@ -69,7 +75,9 @@ h1{
 }
 
 ul{
+	padding: 0;
 	-webkit-padding-start: 0;
+	-webkit-padding-end: 0;
 }
 
 
@@ -126,6 +134,7 @@ nav li > a:visited{
 form > div{
 	width: 215px;
 	display: inline-block;
+
 }
 
 
@@ -140,7 +149,7 @@ input[type=search]{
 	border-left: transparent;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	box-shadow: inset -2px 5px 5px #c9c9c9;
+	box-shadow: inset -4px 5px 5px #c9c9c9;
 }
 
 form > button{
@@ -151,7 +160,7 @@ form > button{
 	background-color: #ededed;
 	color: #6d6d6d;
 	padding: 6px 10px;
-	margin: -5px -4px 0 0;
+	margin: -5px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 	box-shadow: inset 5px 5px 5px #c9c9c9;
@@ -159,6 +168,9 @@ form > button{
 
 /*----------styles for top-news--------*/
 .top-news{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	border-bottom: 1px solid #ebebeb;
 }
@@ -166,9 +178,7 @@ form > button{
 .banner{
 	width: 520px;
 	height: 283px;
-	background-color: #000000;
-	background-image: url(images/rafael_big.png);
-	background-position: center;
+	background: #000000 url(images/rafael_big.png) center;
 	border-radius: 12px;
 	padding-top: 196px;
 	box-sizing: border-box;
@@ -206,14 +216,17 @@ form > button{
 	line-height: 30px;
 	padding-left: 40px; 
 	margin: 11px auto;
-	background-image: url(images/newspaper.png);
-	background-repeat: no-repeat;
+	background: url(images/newspaper.png) no-repeat;
 }
 
 .fresh_news li{
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 	padding-bottom: 7px;
 }
 .fresh_news ul{
@@ -227,9 +240,8 @@ form > button{
 	box-sizing: border-box;
 	background-color: #ffffff;
 	border: 1px solid #d6d6d6;
-	border-left: 1px solid #d6d6d6;
-	border-right: 5px solid #dcdcdc;
-	border-bottom: 5px solid #dcdcdc;
+	border-right: 5px #dcdcdc;
+	border-bottom: 5px #dcdcdc;
 	border-radius: 5px;
 }
 .fresh_news a>img{
@@ -261,8 +273,12 @@ form > button{
 
 /*------------styles for news------------------*/
 .news{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 }
 
 
@@ -316,9 +332,12 @@ form > button{
 
 .sidebar{
 	box-sizing: border-box;
-	
 	border-top: 1px solid #ebebeb;
 	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+
 }
 
 
@@ -379,6 +398,9 @@ footer p{
 }
 
 .archive > div{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 
 }
@@ -386,20 +408,21 @@ footer p{
 .archive ul{
 	margin: 0 auto;
 	flex: 1;
+	-webkit-flex: 1;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 }
 
 .archive h3{
 	line-height: 30px;
-	padding-left: 40px; 
-	background-image: url(images/achiv.png);
-	background-repeat: no-repeat;
+	padding-left: 40px;
+	background: url(images/achiv.png) no-repeat;
 }
 
 .comments h3{
 	line-height: 30px;
-	padding-left: 40px; 
-	background-image: url(images/comanticon.png);
-	background-repeat: no-repeat;
+	padding-left: 40px;
+	background: url(images/comanticon.png) no-repeat;
 }
 
 /*----------styles for photo & video-------------*/
@@ -441,15 +464,15 @@ margin-right: 0;
 
 .photo h3{
 	line-height: 30px;
-	padding-left: 40px; 
-	background-image: url(images/cameraretro.png);
-	background-repeat: no-repeat;
+	padding-left: 40px;
+	background: url(images/cameraretro.png) no-repeat;
 }
 .video h3{
 	line-height: 30px;
-	padding-left: 40px; 
-	background-image: url(images/coment_camera_icon.png);
-	background-repeat: no-repeat;
+	padding-left: 40px;
+	width: 35px;
+	height: 30px;
+	background: url(images/coment_camera_icon.png) no-repeat;
 }
 
 
@@ -461,14 +484,17 @@ margin-right: 0;
 	position: absolute;
 	top: 35px;
 	left: 58px;
-	background-image: url(images/videobutton.png);
-	background-repeat: no-repeat;
+	background: url(images/videobutton.png) no-repeat;
 }
 /*-------------footer-----------*/
 footer{
 	padding: 20px 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 }
 
 footer span{
@@ -479,8 +505,7 @@ footer a{
 	display: inline-block;
 	height: 28px;
 	width: 28px;
-	background-image: url(images/sprite.png);
-	background-repeat: no-repeat;
+	background: url(images/sprite.png) no-repeat;
 	margin-top: 5px;
 }
 
