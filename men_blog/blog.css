@@ -172,6 +172,10 @@ form > button{
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -186,7 +190,7 @@ form > button{
 }
 
 .news_line{
-	width: 520px;
+	width: 500px;
 	height: 87px;
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0.4);
@@ -211,6 +215,7 @@ form > button{
 
 .fresh_news{
 	width: 350px;
+
 }
 .fresh_news h3{
 	line-height: 30px;
@@ -225,8 +230,10 @@ form > button{
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	padding-bottom: 7px;
 }
 .fresh_news ul{
@@ -277,8 +284,11 @@ form > button{
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
 }
 
 
@@ -348,6 +358,7 @@ aside:first-of-type{
 
 /*-----------------comments and archive--------------*/
 .comments{
+	width: 279px;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -427,8 +438,9 @@ footer p{
 
 /*----------styles for photo & video-------------*/
 .additionally{
-	box-sizing: border-box;
+	width: 595px;
 	padding-left: 35px;
+	box-sizing: border-box;
 }
 
 
@@ -493,8 +505,10 @@ footer{
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 footer span{
